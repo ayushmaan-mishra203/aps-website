@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className='p-8'>
         <div className='flex items-center'>
             <div>
-                <Link href='/' className='text-3xl font-bold text-gray-800'>APS Technologies</Link>
+                <Link href='/' className='text-3xl font-bold text-gray-800'>APraSak Technologies</Link>
             </div>
             <div className='ml-auto flex space-x-4 gap-14 text-lg'>
                 <Link href='/' className=' font-bold text-gray-800'>Home</Link>
