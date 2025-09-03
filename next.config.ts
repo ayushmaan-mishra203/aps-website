@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // 👈 enables static export
+  output: 'export',
   images: {
-    unoptimized: true, // required for GitHub Pages
+    unoptimized: true,
   },
-  basePath: "/aps-website", // 👈 replace with your repo name
-  assetPrefix: "/aps-website/",
+  basePath: '/aps-website', // replace with your repo name
+  assetPrefix: '/aps-website/',
 };
 
 export default nextConfig;
