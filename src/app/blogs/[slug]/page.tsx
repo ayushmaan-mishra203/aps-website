@@ -1,31 +1,40 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { remark } from "remark";
-import html from "remark-html";
+// app/blogs/[slug]/page.tsx
 
-interface BlogPageProps {
-  params: { slug: string }
-}
+import { notFound } from "next/navigation";
 
-export default async function BlogPage({ params }: BlogPageProps) {
-  const filePath = path.join(process.cwd(), "src/content/blogs", `${params.slug}.md`);
-  const fileContent = fs.readFileSync(filePath, "utf-8");
+export default async function BlogPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params; // ✅ must await, since Next wraps it in a Promise
 
-  const { content, data } = matter(fileContent);
-  const processedContent = await remark().use(html).process(content);
-  const contentHtml = processedContent.toString();
+  // Fake data
+  const blogPosts: Record<string, { title: string; content: string }> = {
+    "first-post": {
+      title: "My First Blog Post",
+      content: "This is the content of the first post.",
+    },
+    "second-post": {
+      title: "Another Blog Post",
+      content: "This is the second blog post content.",
+    },
+  };
+
+  const post = blogPosts[slug];
+
+  if (!post) {
+    notFound();
+  }
 
   return (
-    <div className="p-10 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">{data.title}</h1>
-      
-      {/* Blog content with typography */}
-      <article
-        className="prose prose-lg prose-gray max-w-none leading-relaxed"
-        dangerouslySetInnerHTML={{ __html: contentHtml }}
-      />
-    </div>
+    <main className="prose mx-auto p-8">
+      <h1>{post.title}</h1>
+      <p>{post.content}</p>
+    </main>
   );
 }
 
+export async function generateStaticParams() {
+  return [{ slug: "first-post" }, { slug: "second-post" }];
+}
