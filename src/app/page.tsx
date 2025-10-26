@@ -10,7 +10,7 @@ export default function Home() {
 
       <div className="flex justify-between bg-white p-10 rounded-lg mt-10">
         <Image
-          src="/ChipImage.png"
+          src="./ChipImage.png"
           alt="Hero Image"
           width={300}
           height={600}
@@ -34,7 +34,7 @@ export default function Home() {
           <div className="flex justify-between items-stretch mt-15 w-full px-10 gap-10">
             <div className="flex flex-col items-center flex-1 bg-gray-50 rounded-lg p-6">
               <Image
-                src="/service-icon1.png"
+                src="./service-icon1.png"
                 alt="Service Image"
                 width={100}
                 height={100}
@@ -45,7 +45,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center flex-1 bg-gray-50 rounded-lg p-6">
               <Image
-                src="/service-icon2.png"
+                src="./service-icon2.png"
                 alt="Service Image2"
                 width={100}
                 height={100}
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center flex-1 bg-gray-50 rounded-lg p-6">
               <Image
-                src="/service-icon3.png"
+                src="./service-icon3.png"
                 alt="Service Image3"
                 width={100}
                 height={100}
