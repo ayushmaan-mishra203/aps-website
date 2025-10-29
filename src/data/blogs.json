@@ -8,5 +8,46 @@
     "slug": "digital-marketing",
     "title": "Embracing Agility: A Comprehensive Guide to the Agile Methodology",
     "summary": "."
+  },
+  {
+    "slug": "Mastering-Software-Design-Patterns",
+    "title": "Mastering Software Design Patterns: Blueprint for Scalable and Maintainable Code",
+    "summary": "Software design patterns are invaluable tools that empower developers to create robust, scalable, and maintainable software systems. "
+  },
+  {
+    "slug": "The-Dynamic-World-of-Web-Development",
+    "title": "The Dynamic World of Web Development: A Comprehensive Overview",
+    "summary": "Web development continues to evolve, driven by technological advancements and changing user expectations"
+  },
+  {
+    "slug": "Unleashing-the-Power-of-MERN-Stack",
+    "title": "Unleashing the Power of MERN Stack: A Comprehensive Guide to Modern Web Development",
+    "summary": "The MERN stack exemplifies the synergy achieved by combining MongoDB, Express.js, React, and Node.js in a cohesive development environment"
+  },
+  {
+    "slug": "Mastering-State-Management",
+    "title": "Mastering State Management in Web Development with React and Redux",
+    "summary": "React and Redux have become integral tools in the toolkit of modern web developers"
+  },
+  {
+    "slug": "Understanding-the-Revolutionary",
+    "title": "Understanding the Revolutionary Impact of Blockchain Technology",
+    "summary": "blockchain technology is reshaping the way we conduct transactions, manage data"
+  },
+  {
+    "slug": "Unleashing-the-Power",
+    "title": "Unleashing the Power of Artificial Intelligence: A Revolution in the Digital Era",
+    "summary": "Artificial Intelligence is a technological frontier that holds immense promise for the future"
+  },
+  {
+    "slug": "The-Metaverse",
+    "title": "The Metaverse: Navigating the Virtual Frontier of Tomorrow",
+    "summary": "The metaverse represents a paradigm shift in how we interact with digital technology"
+  },
+  {
+    "slug": "Navigating-the-Landscape",
+    "title": "Navigating the Landscape of Healthcare: Challenges, Innovations, and the Path Forward",
+    "summary": "The healthcare landscape is evolving rapidly, presenting both challenges and opportunities"
   }
+
 ]
