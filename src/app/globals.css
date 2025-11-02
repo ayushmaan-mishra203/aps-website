@@ -46,3 +46,13 @@ body {
 .prose ol {
   @apply list-disc list-inside mb-6 pl-4;
 }
+
+.text-gradient {
+  background: linear-gradient(90deg, #FFD580, #A67CFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+}
