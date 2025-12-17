@@ -21,20 +21,29 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div style={{
-        minHeight: "100vh",
-        background: 'linear-gradient(90deg, #F7FAFF 0%, #EAF4FB 100%)',
-        }}>
+        <div
+          style={{
+            minHeight: "100vh",
+            background: "linear-gradient(90deg, #F7FAFF 0%, #EAF4FB 100%)",
+          }}
+        >
+
+          {/* fixed navbar always on top */}
           <Navbar />
-          {children}
+
+          {/* global padding to prevent overlap */}
+          <main className="pt-24">
+            {children}
+          </main>      
+
           <Footer />
         </div>
       </body>
